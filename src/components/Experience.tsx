@@ -5,7 +5,7 @@ const experienceItems = [
     role: 'Event Manager',
     company: 'Sauder Summit Case Competition',
     period: 'Jan 2026 - Mar 2026',
-    details: 'Coordinating execution of an international case competition hosting 16 teams, ensuring structured timeline adherence. Serving as primary liaison between competitors, judges, and organizing committee during high-pressure Global Week.',
+    details: 'Coordinated execution of an international case competition hosting 16 teams, ensuring structured timeline adherence. Served as primary liaison between competitors, judges, and organizing committee during high-pressure Global Week.',
   },
   {
     role: 'Competitor & Participant',
