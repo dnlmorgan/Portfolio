@@ -77,7 +77,7 @@ export default function About() {
             >
               <h3 className="text-pink-400 font-semibold mb-3">Core Stack</h3>
               <div className="flex flex-wrap gap-2">
-                {['TypeScript', 'React', 'Next.js', 'Python', 'C++', 'Tailwind', 'Figma', 'Git'].map(tech => (
+                {['Python', 'C++', 'TypeScript', 'React', 'Next.js', 'TensorFlow', 'PyTorch', 'Git'].map(tech => (
                   <span key={tech} className="px-3 py-1 bg-white/[0.05] border border-white/10 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm transition-colors hover:bg-white/10">
                     {tech}
                   </span>

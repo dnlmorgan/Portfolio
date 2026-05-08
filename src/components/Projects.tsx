@@ -2,26 +2,32 @@
 
 const projects = [
   {
-    name: 'Pawmora: Social Pet Matching',
-    description: 'Developed product strategy and MVP for a vertical video adoption platform, aligning user experience, backend systems, and go-to-market positioning. Conducted competitive analysis and aligned frontend architecture with core product objectives.',
+    name: 'AI Tree Canopy Identification System',
+    description: 'Modelled and optimized neural networks for automated identification of urban tree canopies from aerial imagery and LiDAR using TensorFlow, PyTorch, and LibTorch. Implemented model training, evaluation, and optimization workflows for large-scale geospatial image datasets. Integrated C++ inference workflows for deployment-focused testing and model optimization.',
+    tech: 'TensorFlow · PyTorch · LibTorch · C++ · Python',
+    link: null,
+  },
+  {
+    name: 'Pawmora: Social Pet Matching Platform',
+    description: 'Developed product strategy and MVP for a vertical video adoption platform, aligning user experience, backend systems (React, TypeScript, Supabase), and go-to-market positioning. Conducted competitive analysis and aligned frontend architecture with core product objectives.',
     tech: 'React · TypeScript · Supabase',
     link: 'https://github.com/danielmorganofficial/Pawmora',
   },
   {
-    name: 'UBC Pair: Campus Matchmaking',
-    description: 'Built a full-stack dating platform implementing a compatibility algorithm across interests, personality traits, and availability while integrating LLM APIs to generate personalized date ideas.',
+    name: 'UBC Pair: AI-Powered Campus Matchmaking Platform',
+    description: 'Built a full-stack dating platform using Next.js, TypeScript, and Firebase, implementing recommendation and matching algorithms across interests, personality traits, and availability while integrating LLM APIs to generate personalized date recommendations.',
     tech: 'Next.js · TypeScript · Firebase · LLM APIs',
     link: 'https://github.com/danielmorganofficial/UBC-Pair',
   },
   {
-    name: 'Mockr: AI Interview Simulation',
-    description: 'Scoped and built an AI-powered mock interview platform in a 24-hour sprint, prioritizing core user flows and integrating AI for end-to-end functionality.',
+    name: 'Mockr: AI Interview Simulation Platform',
+    description: 'Scoped and built an AI-powered mock interview platform in a 24-hour sprint, prioritizing core user flows and integrating TypeScript, Python, OpenCV, and LLM APIs for end-to-end functionality.',
     tech: 'TypeScript · Python · OpenCV · LLM APIs',
     link: 'https://github.com/danielmorganofficial/Mockr',
   },
   {
-    name: 'Anchor: Peer Accountability App',
-    description: 'Led primary user research and designed a peer-based productivity platform in Figma, validating demand through survey data and differentiating via social accountability features.',
+    name: 'Anchor: Peer Accountability Productivity App',
+    description: 'Led primary user research and designed a peer-based productivity platform in Figma, validating demand through survey data and differentiating via social accountability features and incentive-based engagement.',
     tech: 'Figma · UX Research · Product Design',
     link: 'https://pin-child-74912954.figma.site',
   },
