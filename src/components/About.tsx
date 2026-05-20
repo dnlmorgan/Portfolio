@@ -2,18 +2,14 @@
 
 export default function About() {
   return (
-    <section id="about" className="mt-32 pt-8 relative">
-      <div className="absolute -inset-x-0 -top-40 -z-10 h-96 bg-gradient-to-b from-transparent via-cyan-900/10 to-transparent blur-3xl pointer-events-none" />
-      <div className="absolute -right-40 top-0 -z-10 h-64 w-64 rounded-full bg-purple-500/10 blur-[100px] pointer-events-none" />
-
+    <section id="about" className="relative">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="rounded-[2.5rem] bg-white/[0.02] border border-white/[0.05] p-10 md:p-16 backdrop-blur-xl shadow-2xl overflow-hidden relative"
+        className="rounded-2xl bg-white/[0.02] border border-white/10 p-10 md:p-16 backdrop-blur-xl overflow-hidden relative"
       >
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500/50 to-transparent opacity-50" />
 
         <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr]">
           <motion.div
@@ -46,7 +42,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="col-span-1 sm:col-span-2 rounded-3xl bg-white/[0.03] p-6 border border-white/5 hover:border-purple-500/30 transition-colors"
+              className="col-span-1 sm:col-span-2 rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-cyan-500/30 transition-colors"
             >
               <h3 className="text-purple-400 font-semibold mb-2">Education</h3>
               <p className="text-white font-medium text-lg mb-1">UBC Sauder School of Business</p>
@@ -58,7 +54,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-3xl bg-white/[0.03] p-6 border border-white/5 hover:border-cyan-500/30 transition-colors"
+              className="rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-purple-500/30 transition-colors"
             >
               <h3 className="text-cyan-400 font-semibold mb-3">Key Awards</h3>
               <ul className="text-slate-300 font-light space-y-2 text-sm">
@@ -73,7 +69,7 @@ export default function About() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="rounded-3xl bg-white/[0.03] p-6 border border-white/5 hover:border-pink-500/30 transition-colors"
+              className="rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-cyan-500/30 transition-colors"
             >
               <h3 className="text-pink-400 font-semibold mb-3">Core Stack</h3>
               <div className="flex flex-wrap gap-2">

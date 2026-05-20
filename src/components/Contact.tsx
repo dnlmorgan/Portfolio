@@ -2,15 +2,14 @@
 
 export default function Contact() {
   return (
-    <section className="mt-20 mb-20">
+    <section className="mb-20">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="rounded-[3rem] bg-gradient-to-br from-slate-900 to-slate-950/80 p-8 md:p-16 border border-white/10 text-center relative overflow-hidden shadow-[0_0_100px_-20px_rgba(168,85,247,0.15)]"
+        className="rounded-2xl bg-white/[0.02] p-8 md:p-16 border border-white/10 text-center relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-cyan-900/20 via-slate-900/10 to-transparent pointer-events-none" />
 
         <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
           <p className="text-sm font-bold uppercase tracking-[0.3em] text-cyan-400 mb-4">Next Steps</p>

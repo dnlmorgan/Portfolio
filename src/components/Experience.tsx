@@ -30,7 +30,7 @@ const experienceItems = [
 
 export default function Experience() {
   return (
-    <section className="rounded-[2rem] border border-slate-800 bg-slate-900/80 p-6 md:p-8 shadow-[0_20px_80px_rgba(15,23,42,0.4)]">
+    <section className="rounded-2xl border border-white/10 bg-white/[0.02] p-8 md:p-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -53,11 +53,8 @@ export default function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900/50 to-slate-950/50 p-6 border border-white/5 backdrop-blur-md transition-all duration-300 hover:border-purple-500/30 hover:shadow-[0_0_30px_-5px_rgba(168,85,247,0.1)] hover:-translate-y-1"
+            className="group relative overflow-hidden rounded-xl bg-white/[0.03] p-6 border border-white/5 backdrop-blur-md transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.04]"
           >
-            <div className="absolute top-0 right-0 p-6 opacity-[0.03] transition-opacity duration-500 group-hover:opacity-10 pointer-events-none">
-              <span className="font-mono text-6xl font-black text-white">0{idx + 1}</span>
-            </div>
             <div className="relative z-10 h-full flex flex-col">
               <div className="mb-4">
                 <p className="inline-block rounded-full bg-purple-500/10 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-purple-400 border border-purple-500/20">{item.period}</p>

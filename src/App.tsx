@@ -38,27 +38,27 @@ export default function App() {
         <div className="absolute -bottom-[20%] left-[20%] h-[60vw] w-[60vw] animate-[spin_30s_linear_infinite] rounded-full bg-pink-900/20 blur-[150px]" />
       </div>
 
-      <div className="relative z-10 block">
-        <Navbar onNavigate={handleNavigate} />
+      <Navbar onNavigate={handleNavigate} />
 
-        <main className="mx-auto max-w-6xl px-4 sm:px-6 pb-16 pt-16 md:pb-24 md:pt-24">
-          <section ref={homeRef} className="scroll-mt-24">
+      <div className="relative z-10 block pt-16">
+        <main className="mx-auto max-w-6xl px-4 sm:px-6 pb-16 md:pb-24">
+          <section ref={homeRef} className="scroll-mt-20">
             <Hero onNavigate={handleNavigate} />
           </section>
 
-          <section ref={aboutRef} className="mt-12 md:mt-20 scroll-mt-24">
+          <section ref={aboutRef} className="mt-12 md:mt-20 scroll-mt-20">
             <About />
           </section>
 
-          <section ref={experienceRef} className="mt-12 md:mt-20 scroll-mt-24">
+          <section ref={experienceRef} className="mt-12 md:mt-20 scroll-mt-20">
             <Experience />
           </section>
 
-          <section ref={projectsRef} className="mt-12 md:mt-20 scroll-mt-24">
+          <section ref={projectsRef} className="mt-12 md:mt-20 scroll-mt-20">
             <Projects />
           </section>
 
-          <section ref={contactRef} className="mt-12 md:mt-20 scroll-mt-24">
+          <section ref={contactRef} className="mt-12 md:mt-20 scroll-mt-20">
             <Contact />
           </section>
         </main>

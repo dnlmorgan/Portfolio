@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="mt-20">
+    <section>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -65,9 +65,8 @@ export default function Projects() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative flex flex-col items-start justify-between rounded-3xl bg-white/[0.02] border border-white/[0.05] p-8 overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:-translate-y-2 hover:border-cyan-500/30 hover:shadow-[0_0_40px_-10px_rgba(6,182,212,0.15)]"
+                className="group relative flex flex-col items-start justify-between rounded-xl bg-white/[0.02] border border-white/10 p-8 overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-cyan-500/30"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative z-10 flex w-full items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] text-white transition-all group-hover:bg-cyan-500 group-hover:text-slate-950">
@@ -90,9 +89,8 @@ export default function Projects() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1 }}
-                className="group relative flex flex-col items-start justify-between rounded-3xl bg-white/[0.02] border border-white/[0.05] p-8 overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:-translate-y-2 hover:border-cyan-500/30 hover:shadow-[0_0_40px_-10px_rgba(6,182,212,0.15)]"
+                className="group relative flex flex-col items-start justify-between rounded-xl bg-white/[0.02] border border-white/10 p-8 overflow-hidden transition-all duration-300 hover:bg-white/[0.04] hover:border-cyan-500/30"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative z-10 flex w-full items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
                 </div>
