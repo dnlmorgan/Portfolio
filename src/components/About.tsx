@@ -19,14 +19,11 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="flex flex-col justify-center"
           >
-            <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1.5 text-sm font-semibold tracking-wide text-cyan-300 mb-6 self-start">
-              <span className="h-2 w-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,0.8)] animate-pulse" />
-              ABOUT ME
-            </div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight leading-tight mb-8">
+            <p className="text-xs uppercase tracking-[0.2em] text-slate-400 mb-6">About me</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight mb-8">
               Building systems, solving problems.
             </h2>
-            <div className="space-y-6 text-lg text-slate-300 leading-relaxed font-light">
+            <div className="space-y-6 text-base text-slate-300 leading-relaxed font-normal">
               <p>
                 I am a student at UBC Sauder pursuing a Combined Major in <strong className="text-white font-medium">Business and Computer Science</strong>. I specialize in building scalable software, designing data-driven systems, and translating complex user problems into elegant technical solutions.
               </p>
@@ -44,9 +41,9 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="col-span-1 sm:col-span-2 rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-cyan-500/30 transition-colors"
             >
-              <h3 className="text-purple-400 font-semibold mb-2">Education</h3>
-              <p className="text-white font-medium text-lg mb-1">UBC Sauder School of Business</p>
-              <p className="text-slate-400 font-light">Business & Computer Science</p>
+              <h3 className="text-white font-semibold mb-3">Education</h3>
+              <p className="text-slate-200 font-medium text-sm mb-1">UBC Sauder School of Business</p>
+              <p className="text-slate-400 text-sm">Business & Computer Science</p>
             </motion.div>
 
             <motion.div
@@ -56,8 +53,8 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-purple-500/30 transition-colors"
             >
-              <h3 className="text-cyan-400 font-semibold mb-3">Key Awards</h3>
-              <ul className="text-slate-300 font-light space-y-2 text-sm">
+              <h3 className="text-white font-semibold mb-3">Key Awards</h3>
+              <ul className="text-slate-300 space-y-2 text-sm">
                 <li className="flex gap-2"><span className="text-cyan-500">▹</span> UBC BizTech UX Open Best Design '25</li>
                 <li className="flex gap-2"><span className="text-cyan-500">▹</span> VEX Provincial Tournament Champions '24</li>
                 <li className="flex gap-2"><span className="text-cyan-500">▹</span> CEMC Math Distinction</li>
@@ -71,10 +68,10 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-xl bg-white/[0.03] p-6 border border-white/10 hover:border-cyan-500/30 transition-colors"
             >
-              <h3 className="text-pink-400 font-semibold mb-3">Core Stack</h3>
+              <h3 className="text-white font-semibold mb-3">Core Stack</h3>
               <div className="flex flex-wrap gap-2">
                 {['Python', 'C++', 'TypeScript', 'React', 'Next.js', 'TensorFlow', 'PyTorch', 'Git'].map(tech => (
-                  <span key={tech} className="px-3 py-1 bg-white/[0.05] border border-white/10 rounded-full text-xs font-medium text-slate-300 backdrop-blur-sm transition-colors hover:bg-white/10">
+                  <span key={tech} className="px-3 py-1 bg-white/[0.05] border border-white/10 rounded-lg text-xs font-medium text-slate-300">
                     {tech}
                   </span>
                 ))}

@@ -38,9 +38,9 @@ export default function Experience() {
         transition={{ duration: 0.6 }}
         className="flex flex-col gap-3"
       >
-        <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">Experience</p>
-        <h2 className="text-xl md:text-2xl font-semibold text-white">Professional highlights</h2>
-        <p className="max-w-2xl text-sm text-slate-400 leading-relaxed">
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Experience</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">Professional highlights</h2>
+        <p className="max-w-2xl text-base text-slate-400 leading-relaxed mt-4">
           A few meaningful contributions and roles where I combined strategic product thinking, rigorous quantitative analysis, and scalable software engineering to deliver high-impact results.
         </p>
       </motion.div>
@@ -57,11 +57,11 @@ export default function Experience() {
           >
             <div className="relative z-10 h-full flex flex-col">
               <div className="mb-4">
-                <p className="inline-block rounded-full bg-purple-500/10 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-purple-400 border border-purple-500/20">{item.period}</p>
+                <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-400">{item.period}</p>
               </div>
-              <h3 className="text-lg font-bold text-white mb-1 tracking-tight">{item.role}</h3>
-              <p className="text-sm font-semibold text-cyan-400 mb-4">{item.company}</p>
-              <p className="text-sm text-slate-400 leading-relaxed mt-auto font-light">{item.details}</p>
+              <h3 className="text-lg font-semibold text-white mb-1">{item.role}</h3>
+              <p className="text-sm font-medium text-slate-300 mb-4">{item.company}</p>
+              <p className="text-sm text-slate-400 leading-relaxed mt-auto">{item.details}</p>
             </div>
           </motion.article>
         ))}

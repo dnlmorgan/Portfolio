@@ -43,9 +43,9 @@ export default function Projects() {
         transition={{ duration: 0.6 }}
         className="flex flex-col gap-4"
       >
-        <p className="text-sm uppercase tracking-[0.35em] text-cyan-400">Projects</p>
-        <h2 className="text-2xl md:text-3xl font-semibold text-white">Selected work</h2>
-        <p className="max-w-2xl text-slate-400">
+        <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Projects</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">Selected work</h2>
+        <p className="max-w-2xl text-base text-slate-400 mt-4">
           Work that highlights product clarity, algorithmic complexity, and robust full-stack execution.
         </p>
       </motion.div>
@@ -69,14 +69,14 @@ export default function Projects() {
               >
                 <div className="relative z-10 flex w-full items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
-                  <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] text-white transition-all group-hover:bg-cyan-500 group-hover:text-slate-950">
+                  <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-slate-300 transition-all group-hover:bg-cyan-500 group-hover:text-white">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                   </span>
                 </div>
-                <p className="relative z-10 mt-6 text-slate-300 leading-relaxed font-light">{project.description}</p>
+                <p className="relative z-10 mt-6 text-slate-300 leading-relaxed text-sm">{project.description}</p>
                 <div className="relative z-10 mt-8 flex flex-wrap gap-2">
                   {project.tech.split('·').map(t => (
-                    <span key={t.trim()} className="rounded-full bg-white/[0.05] border border-white/10 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm">{t.trim()}</span>
+                    <span key={t.trim()} className="rounded-lg bg-white/[0.05] border border-white/10 px-3 py-1 text-xs font-medium text-slate-300">{t.trim()}</span>
                   ))}
                 </div>
               </motion.a>
@@ -94,10 +94,10 @@ export default function Projects() {
                 <div className="relative z-10 flex w-full items-center justify-between gap-3">
                   <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
                 </div>
-                <p className="relative z-10 mt-6 text-slate-300 leading-relaxed font-light">{project.description}</p>
+                <p className="relative z-10 mt-6 text-slate-300 leading-relaxed text-sm">{project.description}</p>
                 <div className="relative z-10 mt-8 flex flex-wrap gap-2">
                   {project.tech.split('·').map(t => (
-                    <span key={t.trim()} className="rounded-full bg-white/[0.05] border border-white/10 px-3 py-1 text-xs font-medium text-slate-300 backdrop-blur-sm">{t.trim()}</span>
+                    <span key={t.trim()} className="rounded-lg bg-white/[0.05] border border-white/10 px-3 py-1 text-xs font-medium text-slate-300">{t.trim()}</span>
                   ))}
                 </div>
               </motion.article>
