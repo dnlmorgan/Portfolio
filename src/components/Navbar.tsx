@@ -22,9 +22,9 @@ export default function Navbar({ onNavigate }: NavbarProps) {
         <button
           type="button"
           onClick={() => onNavigate('home')}
-          className="flex items-center gap-3 transition hover:opacity-70\"
+          className="flex items-center gap-3 transition hover:opacity-70"
         >
-          <span className=\"text-lg font-bold text-white\">
+          <span className="text-lg font-bold text-white">
             Daniel Morgan
           </span>
         </button>

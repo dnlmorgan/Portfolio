@@ -31,39 +31,31 @@ const experienceItems = [
 export default function Experience() {
   return (
     <section className="rounded-2xl border border-white/10 bg-white/[0.02] p-8 md:p-12">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+      <div
         className="flex flex-col gap-3"
       >
-        <p className="text-xs uppercase tracking-[0.2em] text-slate-400">Experience</p>
-        <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">Professional highlights</h2>
-        <p className="max-w-2xl text-base text-slate-400 leading-relaxed mt-4">
+        <p className="text-xs uppercase tracking-[0.3em] text-cyan-400">Experience</p>
+        <h2 className="text-xl md:text-2xl font-semibold text-white">Professional highlights</h2>
+        <p className="max-w-2xl text-sm text-slate-400 leading-relaxed">
           A few meaningful contributions and roles where I combined strategic product thinking, rigorous quantitative analysis, and scalable software engineering to deliver high-impact results.
         </p>
-      </motion.div>
+      </div>
 
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {experienceItems.map((item, idx) => (
-          <motion.article
+          <article
             key={item.role}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.5, delay: idx * 0.1 }}
             className="group relative overflow-hidden rounded-xl bg-white/[0.03] p-6 border border-white/5 backdrop-blur-md transition-all duration-300 hover:border-cyan-500/30 hover:bg-white/[0.04]"
           >
             <div className="relative z-10 h-full flex flex-col">
               <div className="mb-4">
-                <p className="text-xs font-medium uppercase tracking-[0.15em] text-slate-400">{item.period}</p>
+                <p className="inline-block rounded-full bg-purple-500/10 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-purple-400 border border-purple-500/20">{item.period}</p>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-1">{item.role}</h3>
-              <p className="text-sm font-medium text-slate-300 mb-4">{item.company}</p>
-              <p className="text-sm text-slate-400 leading-relaxed mt-auto">{item.details}</p>
+              <h3 className="text-lg font-bold text-white mb-1 tracking-tight">{item.role}</h3>
+              <p className="text-sm font-semibold text-cyan-400 mb-4">{item.company}</p>
+              <p className="text-sm text-slate-400 leading-relaxed mt-auto font-light">{item.details}</p>
             </div>
-          </motion.article>
+          </article>
         ))}
       </div>
     </section>
