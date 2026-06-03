@@ -16,7 +16,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       >
 
 
-        <p className="text-sm uppercase tracking-[0.35em] text-cyan-400">UBC Business & CS student</p>
+        <p className="section-title">UBC Business & CS student</p>
       </motion.div>
 
       <motion.div

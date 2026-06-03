@@ -2,13 +2,20 @@
 
 @layer base {
   :root {
+    /* centralised tones for a more consistent UI */
+    --primary: 34, 211, 238; /* cyan */
+    --accent: 168, 85, 247; /* purple */
+    --muted: 148, 163, 184; /* slate-400-ish */
+    --bg-accent: 6, 182, 212;
+    --card-bg: rgba(255,255,255,0.02);
+    --border: rgba(148,163,184,0.08);
     color-scheme: dark;
   }
 
   html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
-    scrollbar-color: rgba(34, 211, 238, 0.4) rgba(15, 23, 42, 0.2);
+    scrollbar-color: rgba(var(--primary), 0.8) rgba(15, 23, 42, 0.12);
   }
 
   html::-webkit-scrollbar {
@@ -16,34 +23,33 @@
   }
 
   html::-webkit-scrollbar-track {
-    background: linear-gradient(180deg, rgba(15, 23, 42, 0.3), rgba(15, 23, 42, 0.1));
-    border-left: 1px solid rgba(34, 211, 238, 0.1);
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.18), rgba(15, 23, 42, 0.06));
+    border-left: 1px solid rgba(var(--primary), 0.06);
   }
 
   html::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, 
-      #22d3ee 0%, 
-      #06b6d4 25%, 
-      #a855f7 75%, 
-      #ec4899 100%);
+    background: linear-gradient(180deg,
+      rgba(var(--primary),1) 0%,
+      rgba(var(--bg-accent),0.9) 35%,
+      rgba(var(--accent),0.9) 75%
+    );
     border-radius: 12px;
-    border: 2px solid rgba(15, 23, 42, 0.4);
-    box-shadow: 0 0 10px rgba(34, 211, 238, 0.3), inset 0 0 8px rgba(168, 85, 247, 0.2);
+    border: 2px solid rgba(2,6,23,0.6);
+    box-shadow: 0 6px 20px rgba(var(--primary), 0.12), inset 0 0 10px rgba(var(--accent), 0.08);
+    backdrop-filter: blur(4px);
+    transition: box-shadow 200ms ease, transform 150ms ease;
   }
 
   html::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, 
-      #06b6d4 0%, 
-      #00d9ff 25%, 
-      #c084fc 75%, 
-      #f472b6 100%);
-    box-shadow: 0 0 20px rgba(34, 211, 238, 0.5), inset 0 0 12px rgba(168, 85, 247, 0.4);
+    box-shadow: 0 10px 30px rgba(var(--primary), 0.22), inset 0 0 16px rgba(var(--accent), 0.14);
+    transform: translateZ(0) scale(1.03);
   }
 
   body {
     @apply bg-slate-950 text-slate-100 antialiased;
-    background-image: radial-gradient(circle at top, rgba(56,189,248,0.12), transparent 28%),
-      radial-gradient(circle at 20% 70%, rgba(168,85,247,0.12), transparent 22%);
+    /* reduced-intensity background accents for consistency */
+    background-image: radial-gradient(circle at top, rgba(var(--primary),0.06), transparent 28%),
+      radial-gradient(circle at 20% 70%, rgba(var(--accent),0.06), transparent 22%);
   }
 
   .typing-cursor {
@@ -53,9 +59,9 @@
   .typing-cursor::after {
     content: '|';
     animation: blink 1s infinite;
-    color: #a855f7;
-    text-shadow: 0 0 6px rgba(168, 85, 247, 0.4);
-    font-weight: bold;
+    color: rgba(var(--accent),0.95);
+    text-shadow: 0 0 4px rgba(var(--accent), 0.18);
+    font-weight: 600;
     margin-left: 1px;
     position: relative;
     top: -2px;
@@ -82,5 +88,49 @@
   textarea,
   select {
     font: inherit;
+  }
+}
+
+/* Headings: keep font sizes and color consistent across sections */
+@layer base {
+  h1, h2, h3 {
+    color: rgb(var(--muted));
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.05rem; }
+
+  p { color: rgba(226,232,240,0.88); }
+  a { color: inherit; }
+}
+
+/* Reusable card and chip utilities for consistent section styles */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.chip {
+  border-radius: 9999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 0.25rem 0.6rem;
+  font-size: 0.75rem;
+  color: rgba(226,232,240,0.9);
+  background: transparent;
+}
+
+/* Section utilities for consistent headings */
+@layer components {
+  .section-title {
+    @apply text-sm uppercase tracking-[0.35em] text-cyan-400;
+  }
+
+  .section-heading {
+    @apply text-2xl md:text-3xl font-semibold text-white;
   }
 }
