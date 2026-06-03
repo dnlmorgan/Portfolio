@@ -1,8 +1,8 @@
 ﻿export default function About() {
   return (
     <section id="about" className="relative">
-      <div className="rounded-3xl bg-white/[0.02] border border-white/10 p-7 md:p-9 backdrop-blur-xl overflow-hidden">
-        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+      <div className="rounded-3xl bg-white/[0.02] border border-white/10 p-6 sm:p-7 md:p-9 overflow-hidden">
+        <div className="grid gap-6 sm:gap-7 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
           <div className="space-y-5">
             <p className="section-title">About</p>
             <h2 className="section-heading">Building systems, solving problems.</h2>
