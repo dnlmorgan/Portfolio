@@ -42,7 +42,7 @@ export default function Hero({ onNavigate }: HeroProps) {
               speed={50}
               repeat={Infinity}
               className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 typing-cursor"
-              cursor={true}
+              cursor={false}
             />
           </span>
         </h1>
