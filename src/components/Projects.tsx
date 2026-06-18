@@ -9,19 +9,19 @@
     name: 'Pawmora: Social Pet Matching Platform',
     description: 'Developed product strategy and MVP for a vertical video adoption platform, aligning user experience, backend systems (React, TypeScript, Supabase), and go-to-market positioning. Conducted competitive analysis and aligned frontend architecture with core product objectives.',
     tech: 'React · TypeScript · Supabase',
-    link: 'https://github.com/danielmorganofficial/Pawmora',
+    link: 'https://github.com/dnlmorgan/Pawmora',
   },
   {
     name: 'UBC Pair: AI-Powered Campus Matchmaking Platform',
     description: 'Built a full-stack dating platform using Next.js, TypeScript, and Firebase, implementing recommendation and matching algorithms across interests, personality traits, and availability while integrating LLM APIs to generate personalized date recommendations.',
     tech: 'Next.js · TypeScript · Firebase · LLM APIs',
-    link: 'https://github.com/danielmorganofficial/UBC-Pair',
+    link: 'https://github.com/dnlmorgan/UBC-Pair',
   },
   {
     name: 'Mockr: AI Interview Simulation Platform',
     description: 'Scoped and built an AI-powered mock interview platform in a 24-hour sprint, prioritizing core user flows and integrating TypeScript, Python, OpenCV, and LLM APIs for end-to-end functionality.',
     tech: 'TypeScript · Python · OpenCV · LLM APIs',
-    link: 'https://github.com/danielmorganofficial/Mockr',
+    link: 'https://github.com/dnlmorgan/Mockr',
   },
   {
     name: 'Anchor: Peer Accountability Productivity App',

@@ -23,7 +23,7 @@ https://danielmorgan.vercel.app/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/danielmorganofficial/personal-website.git
+   git clone https://github.com/dnlmorgan/personal-website.git
    cd personal-website/portfolio
    ```
 
@@ -49,5 +49,5 @@ Always open to discussing new opportunities, demanding technical challenges, and
 
 - **Email**: danielmichelmorgan@gmail.com
 - **LinkedIn**: [danielmmorgan](https://www.linkedin.com/in/danielmmorgan/)
-- **GitHub**: [danielmorganofficial](https://github.com/danielmorganofficial)
+- **GitHub**: [dnlmorgan](https://github.com/dnlmorgan)
 - **Devpost**: [danielmichelmorgan](https://devpost.com/danielmichelmorgan)

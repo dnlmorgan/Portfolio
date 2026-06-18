@@ -48,7 +48,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
           <a href="https://devpost.com/danielmichelmorgan" target="_blank" rel="noreferrer" className="transition hover:text-white">
             Devpost
           </a>
-          <a href="https://github.com/danielmorganofficial/" target="_blank" rel="noreferrer" className="transition hover:text-white">
+          <a href="https://github.com/dnlmorgan/" target="_blank" rel="noreferrer" className="transition hover:text-white">
             GitHub
           </a>
           <a href="https://www.linkedin.com/in/danielmmorgan/" target="_blank" rel="noreferrer" className="transition hover:text-white">
@@ -114,7 +114,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
                 <a href="https://devpost.com/danielmichelmorgan" target="_blank" rel="noreferrer" className="text-slate-300 transition hover:text-white py-2">
                   Devpost
                 </a>
-                <a href="https://github.com/danielmorganofficial/" target="_blank" rel="noreferrer" className="text-slate-300 transition hover:text-white py-2">
+                <a href="https://github.com/dnlmorgan/" target="_blank" rel="noreferrer" className="text-slate-300 transition hover:text-white py-2">
                   GitHub
                 </a>
                 <a href="https://www.linkedin.com/in/danielmmorgan/" target="_blank" rel="noreferrer" className="text-slate-300 transition hover:text-white py-2">
