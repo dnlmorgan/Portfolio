@@ -1,21 +1,27 @@
 const experienceItems = [
   {
+    role: 'Events Director',
+    company: 'UBC Startups',
+    period: 'Jul 2026 - Present',
+    details: 'Planned and coordinated startup events, managing logistics, programming, and attendee experience. Researched founders and speakers while supporting event execution with the executive team.',
+  },
+  {
     role: 'Event Manager',
     company: 'Sauder Summit Case Competition',
     period: 'Jan 2026 - Mar 2026',
-    details: 'Coordinated execution of an international case competition hosting 16 teams, managing event logistics and operational timelines. Served as the primary liaison between competitors, judges, and the organizing committee during high-pressure Global Week.',
+    details: 'Coordinated execution of a case competition hosting 16 teams, managing event logistics and operational timelines. Served as the main liaison between competitors, judges, and the organizing committee.',
   },
   {
     role: 'Club Executive',
     company: 'Citizens of Churchill Club',
     period: 'Sep 2022 - Jun 2025',
-    details: 'Led coordination of large-scale events serving 1,500+ attendees, aligning 150+ volunteers around structured timelines.',
+    details: 'Led large-scale school events serving 1,500+ attendees and coordinated 150+ volunteers across planning and execution.',
   },
   {
     role: 'Builder & Programmer',
     company: 'VEX Robotics',
     period: 'Jun 2023 - May 2024',
-    details: 'Optimized robotics systems using C++, applying iterative prototyping and structured performance testing. Competed at the VEX World Championship, diagnosing and resolving real-time system failures during competition.',
+    details: 'Built and optimized robotics systems using C++, applying rapid prototyping and iterative testing. Competed at the VEX World Championship, solving hardware and software issues in real time.',
   },
 ]
 
