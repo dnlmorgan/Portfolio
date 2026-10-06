@@ -1,31 +1,31 @@
 ﻿const projects = [
   {
-    name: 'AI Tree Canopy Identification System',
-    description: 'Modelled and optimized neural networks for automated identification of urban tree canopies from aerial imagery and LiDAR as part of a project developed for the City of Edmonton using TensorFlow, PyTorch, and LibTorch. Implemented model training, evaluation, and optimization workflows for large-scale geospatial image datasets. Integrated C++ inference workflows for deployment-focused testing and model optimization.',
-    tech: 'TensorFlow · PyTorch · LibTorch · C++ · Python',
-    link: null,
-  },
-  {
-    name: 'Pawmora: Social Pet Matching Platform',
-    description: 'Developed product strategy and MVP for a vertical video adoption platform, aligning user experience, backend systems (React, TypeScript, Supabase), and go-to-market positioning. Conducted competitive analysis and aligned frontend architecture with core product objectives.',
-    tech: 'React · TypeScript · Supabase',
-    link: 'https://github.com/dnlmorgan/Pawmora',
+    name: 'SURGE: Real-Time Flood Response Platform',
+    description: 'Built a two-way real-time emergency communication platform that synchronizes government directives, evacuation routes, SOS reports, and resident updates across separate interfaces. Integrated Gemini and ElevenLabs into a contextual voice agent for speech-to-text, text-to-speech, live emergency queries, and location-based incident reporting.',
+    tech: 'Next.js · React · TypeScript · Snowflake · Gemini · ElevenLabs',
+    link: 'https://github.com/dnlmorgan/SURGE',
   },
   {
     name: 'UBC Pair: AI-Powered Campus Matchmaking Platform',
-    description: 'Built a full-stack dating platform using Next.js, TypeScript, and Firebase, implementing recommendation and matching algorithms across interests, personality traits, and availability while integrating LLM APIs to generate personalized date recommendations.',
+    description: 'Built a full-stack campus matchmaking platform using Next.js, TypeScript, and Firebase, implementing a compatibility algorithm across interests, personality traits, and availability. Integrated LLM APIs to generate personalized match recommendations from user profiles and compatibility data.',
     tech: 'Next.js · TypeScript · Firebase · LLM APIs',
     link: 'https://github.com/dnlmorgan/UBC-Pair',
   },
   {
     name: 'Mockr: AI Interview Simulation Platform',
-    description: 'Scoped and built an AI-powered mock interview platform in a 24-hour sprint, prioritizing core user flows and integrating TypeScript, Python, OpenCV, and LLM APIs for end-to-end functionality.',
+    description: 'Built an AI-powered mock interview platform during a 24-hour hackathon using TypeScript, Python, OpenCV, and LLM APIs. Integrated speech, computer vision, and AI components into an end-to-end interview simulation workflow.',
     tech: 'TypeScript · Python · OpenCV · LLM APIs',
     link: 'https://github.com/dnlmorgan/Mockr',
   },
   {
+    name: 'Pawmora: Social Pet Matching Platform',
+    description: 'Translated user research and competitive analysis into product requirements for a social pet adoption platform. Built a React, TypeScript, and Supabase MVP with core user and pet-matching functionality.',
+    tech: 'React · TypeScript · Supabase',
+    link: 'https://github.com/dnlmorgan/Pawmora',
+  },
+  {
     name: 'Anchor: Peer Accountability Productivity App',
-    description: 'Led primary user research and designed a peer-based productivity platform in Figma, validating demand through survey data and differentiating via social accountability features and incentive-based engagement.',
+    description: 'Led primary user research and designed a peer-based productivity platform in Figma, using survey insights to inform product decisions. Developed social accountability and incentive-based features to improve user engagement and productivity.',
     tech: 'Figma · UX Research · Product Design',
     link: 'https://pin-child-74912954.figma.site',
   },
@@ -33,7 +33,7 @@
 
 export default function Projects() {
   return (
-    <section className="mt-16">
+    <section>
       <div className="flex flex-col gap-3">
         <p className="section-title">Projects</p>
         <h2 className="section-heading">Selected work</h2>
@@ -53,8 +53,10 @@ export default function Projects() {
                 className="group relative flex flex-col items-start justify-between rounded-3xl bg-white/[0.02] border border-white/[0.05] p-6 overflow-hidden transition-all duration-500 hover:bg-white/[0.04] hover:-translate-y-1 hover:border-cyan-500/30 hover:shadow-[0_0_32px_-10px_rgba(6,182,212,0.15)]"
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
-                <div className="relative z-10 flex w-full items-center justify-between gap-3">
-                  <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
+                <div className="relative z-10 flex w-full items-start justify-between gap-3">
+                  <div>
+                    <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
+                  </div>
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] text-white transition-all group-hover:bg-cyan-500 group-hover:text-slate-950">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                   </span>
@@ -75,7 +77,9 @@ export default function Projects() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-purple-500/10 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                 <div className="relative z-10 flex w-full items-center justify-between gap-3">
-                  <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
+                  <div>
+                    <h3 className="text-xl font-semibold text-white tracking-tight">{project.name}</h3>
+                  </div>
                 </div>
                 <p className="relative z-10 mt-5 text-slate-300 leading-7 font-light">{project.description}</p>
                 <div className="relative z-10 mt-6 flex flex-wrap gap-2">

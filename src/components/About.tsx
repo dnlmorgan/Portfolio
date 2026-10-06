@@ -8,42 +8,37 @@
             <h2 className="section-heading">Building systems, solving problems.</h2>
             <div className="space-y-4 text-base text-slate-300 leading-7 max-w-2xl">
               <p>
-                I am a student at UBC Sauder pursuing a Combined Major in <strong className="text-white font-medium">Business and Computer Science</strong>. I specialize in building scalable software, designing data-driven systems, and translating complex user problems into elegant technical solutions.
+                I'm a student at UBC Sauder pursuing a Combined Major in <strong className="text-white font-medium">Business and Computer Science</strong>. I chose a mix of the two because I'm interested in both how technology is built and what makes it useful to people.
               </p>
               <p>
-                Whether I am developing full-stack applications, analyzing algorithmic models, or executing high-level product strategies, my focus is always on creating efficient and impactful systems. I am deeply passionate about technology-driven problem solving in fast-paced environments.
+                So far, I've worked on everything from <strong className="text-white font-medium">geospatial computer vision</strong> during my software engineering internship to AI, full-stack, and product-focused projects through hackathons. I enjoy getting into the details, learning new tools, and taking an idea from something rough to something people can actually use.
               </p>
               <p>
-                I also enjoy collaborating across product, design, and engineering teams to ensure that solutions are practical for users and aligned with long-term business goals.
+                I also enjoy the parts of building that happen between the technical work: understanding the problem, listening to users, sharing ideas early, and working through trade-offs with a team. I'm still figuring out exactly where I want to take that, but I know I want to keep <strong className="text-white font-medium">building, learning, and solving problems that I find genuinely interesting.</strong>
               </p>
             </div>
           </div>
 
           <div className="rounded-3xl bg-white/[0.03] border border-white/10 p-6 sm:p-7">
-            <div className="space-y-6">
-              <div className="space-y-2">
+            <div className="space-y-4">
+              <div className="space-y-1">
                 <h3 className="text-cyan-300 font-semibold text-sm uppercase tracking-[0.18em]">Education</h3>
                 <p className="text-white font-medium">UBC Sauder School of Business</p>
-                <p className="text-slate-400 text-sm">Business + Computer Science</p>
+                <p className="text-slate-400 text-sm">Business and Computer Science</p>
+                <p className="text-slate-400 text-sm">Dean's List</p>
               </div>
 
-              <div className="space-y-2 border-t border-white/10 pt-4">
+              <div className="space-y-1 border-t border-white/10 pt-3">
                 <h3 className="text-cyan-300 font-semibold text-sm uppercase tracking-[0.18em]">Key awards</h3>
-                <ul className="text-slate-300 text-sm space-y-2">
-                  <li className="flex gap-2"><span className="text-cyan-400">▹</span> UBC BizTech UX Open Best Design '25</li>
-                  <li className="flex gap-2"><span className="text-cyan-400">▹</span> VEX Provincial Tournament Champions '24</li>
-                  <li className="flex gap-2"><span className="text-cyan-400">▹</span> CEMC Math Distinction</li>
-                </ul>
+                <p className="text-slate-300 text-sm leading-6">StormHacks · Best Use of Snowflake (2026)<br />UBC BUCS Hackathon · Audience Favourite (2026)<br />UBC BizTech UX Open · Best UX Design (2025)<br />Alberta VEX Robotics Provincial Champions (2024)</p>
               </div>
 
-              <div className="space-y-2 border-t border-white/10 pt-4">
-                <h3 className="text-cyan-300 font-semibold text-sm uppercase tracking-[0.18em]">Core stack</h3>
-                <div className="flex flex-wrap gap-2">
-                  {['Python', 'C++', 'TypeScript', 'React', 'Next.js', 'TensorFlow', 'PyTorch', 'Git'].map((tech) => (
-                    <span key={tech} className="px-3 py-1 bg-white/[0.05] border border-white/10 rounded-full text-[11px] font-medium text-slate-300 backdrop-blur-sm">
-                      {tech}
-                    </span>
-                  ))}
+              <div className="space-y-1 border-t border-white/10 pt-3">
+                <h3 className="text-cyan-300 font-semibold text-sm uppercase tracking-[0.18em]">Skills</h3>
+                <div className="space-y-1 text-sm leading-6">
+                  <p className="text-slate-300"><strong className="text-white">Languages:</strong> Python, C++, TypeScript, JavaScript, SQL</p>
+                  <p className="text-slate-300"><strong className="text-white">Development & AI:</strong> React, Next.js, PyTorch, TensorFlow, OpenCV, Gemini, ElevenLabs</p>
+                  <p className="text-slate-300"><strong className="text-white">Systems & tools:</strong> Snowflake, GDAL, Eigen, LiDAR, KD-trees, multithreading, Firebase, Git, GitHub, Figma</p>
                 </div>
               </div>
             </div>
